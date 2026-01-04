@@ -1,0 +1,63 @@
+👕 Clothing Brand - Premium Fashion Store (C++ Version)
+Program manajemen e-commerce berbasis C++ yang menggunakan struktur data Double Linked List untuk mengelola data customer, KTP, dan transaksi penjualan melalui penyimpanan file teks.
+
+🚀 Struktur Program
+Program ini dibangun secara modular menggunakan beberapa komponen utama:
+
+1. Header Files (Logika & Struktur Data)
+DataModel.h: Mendefinisikan struktur data untuk produk dan model transaksi.
+
+DoubleLinkedList.h: Implementasi struktur data Double Linked List untuk menyimpan dan mengelola antrean data secara dinamis.
+
+KTP_Data.h: Mengelola struktur data penduduk (NIK, Nama, Alamat) yang digunakan untuk validasi registrasi customer.
+
+
+Auth.h: Berisi logika autentikasi untuk login dan registrasi pengguna.
+
+2. Database (Flat-File Storage)
+KTP.txt: Database referensi data penduduk.
+
+database_transaksi.txt: Rekam jejak seluruh transaksi yang dilakukan pengguna.
+
+Laporan_Penjualan.txt: Output laporan rekapitulasi penjualan untuk kebutuhan admin.
+
+3. Core Engine
+main.cpp: Program utama yang mengatur alur menu, integrasi antar modul, dan antarmuka pengguna berbasis terminal.
+
+🛠️ Cara Menjalankan (Kompilasi)
+Pastikan Anda memiliki compiler C++ (seperti G++) yang terpasal di sistem Anda.
+
+Buka terminal atau command prompt.
+
+Lakukan kompilasi dengan perintah berikut:
+
+Bash
+
+g++ main.cpp -o clothing_brand
+Jalankan aplikasi:
+
+Bash
+
+./clothing_brand
+📝 Fitur Utama
+Validasi KTP: Pendaftaran akun customer baru divalidasi berdasarkan data yang ada di file KTP.txt.
+
+Manajemen Transaksi: Menggunakan Double Linked List untuk mencatat item belanja secara fleksibel sebelum disimpan ke database.
+
+Sistem Laporan: Menghasilkan file Laporan_Penjualan.txt yang berisi ringkasan performa toko.
+
+
+Autentikasi: Sistem login aman untuk membedakan akses customer dan administrator.
+
+📂 Contoh Penggunaan
+Login Customer
+Gunakan NIK yang terdaftar untuk masuk ke sistem. Anda dapat merujuk pada KTP.txt untuk melihat daftar NIK yang valid.
+
+Alur Belanja
+Pilih menu belanja di main.cpp.
+
+Data produk akan dimuat ke dalam memori.
+
+Setiap transaksi akan diverifikasi dan disimpan secara permanen ke database_transaksi.txt.
+
+© 2026 Clothing Brand Systems - Integrated C++ Management.
